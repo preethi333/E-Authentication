@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/phonewall"
+    android:fadeScrollbars="false"
+    android:fitsSystemWindows="true"
+    android:focusable="auto"
+    android:visibility="visible"
+    tools:context=".Activities.RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="255dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Register Here!!"
+        android:textAlignment="center"
+        android:textColor="#98B5D5"
+        android:textColorHint="#E44310"
+        android:textSize="24sp"
+        android:translationX="30px"
+        app:layout_constraintBottom_toTopOf="@+id/Regname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="356dp" />
+
+    <EditText
+        android:id="@+id/Regname"
+        android:layout_width="275dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:soundEffectsEnabled="true"
+        android:textColor="#0A0808"
+        app:layout_constraintBottom_toTopOf="@+id/Regmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Regmail"
+        android:layout_width="275dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColor="#FC0C0808"
+        app:layout_constraintBottom_toTopOf="@+id/Regpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Regpassword"
+        android:layout_width="275dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#0E0808"
+        app:layout_constraintBottom_toTopOf="@+id/Regphoneno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Regphoneno"
+        android:layout_width="275dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/reg_edittext_style"
+        android:digits="0123456789"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:hint="PhoneNo"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColor="#0E0707"
+        app:layout_constraintBottom_toTopOf="@+id/Regbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Regbtn"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="132dp"
+        android:background="@drawable/reg_btn"
+        android:fontFamily="@font/aclonica"
+        android:text="Sign in"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/Regbtn"
+        app:layout_constraintEnd_toEndOf="@+id/Regbtn"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/Regbtn"
+        app:layout_constraintTop_toTopOf="@+id/Regbtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginBottom="88dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Already registered ?"
+        android:textColor="#ED03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Login here"
+        android:textColor="#EC0C0C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
